@@ -1,0 +1,197 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, dodgerblue, cyan);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+nav {
+    background: darkblue;
+    position: sticky;
+    top: 100px;
+    z-index: 90;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 10px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.banner {
+    background-image: url('https://images.unsplash.com/photo-1522199710521-72d69614c702');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-text {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+    z-index: 5;
+}
+
+.banner-text span {
+    color: cyan;
+}
+
+.banner-text button {
+    margin-top: 15px;
+    background: cyan;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner-text button:hover {
+    background: dodgerblue;
+}
+
+
+.about {
+    padding: 60px 20px;
+    background: aliceblue;
+    text-align: center;
+}
+
+.about h2 {
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+
+.projects {
+    padding: 60px 20px;
+    background: white;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: dodgerblue;
+    color: white;
+    padding: 40px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    background: dodgerblue;
+}
+
+.project-card::after {
+    content: "Ko‘rish";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    color: dodgerblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+
+.contact {
+    background: aliceblue;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact form {
+    display: inline-block;
+    text-align: left;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+}
+
+.contact button {
+    width: 100%;
+    background: dodgerblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background: dodgerblue;
+}
+
+
+
+.footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    font-family: "Poppins", sans-serif;
+}
